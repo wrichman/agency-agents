@@ -16,8 +16,9 @@ export default defineConfig({
         {
           tag: 'script',
           content: `
-            document.documentElement.dataset.theme = 'dark';
-            try { localStorage.setItem('starlight-theme', 'dark'); } catch(e) {}
+            if (!localStorage.getItem('starlight-theme')) {
+              document.documentElement.dataset.theme = 'light';
+            }
           `,
         },
         {
