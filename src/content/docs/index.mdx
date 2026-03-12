@@ -1,9 +1,9 @@
 ---
 title: The Agency
-description: 128 specialized AI agents ready to transform your workflow — from frontend wizards to compensation analysts.
+description: 114 specialized AI agents ready to transform your workflow.
 template: splash
 hero:
-  tagline: Your complete AI team, ready to deploy. 128 specialists with personality, process, and proven deliverables.
+  tagline: Your complete AI team, ready to deploy.
   image:
     html: '<div class="hero-emoji">🎭</div>'
   actions:
@@ -11,85 +11,239 @@ hero:
       link: /agency-agents/engineering/
       icon: right-arrow
       variant: primary
-    - text: View on GitHub
+    - text: GitHub
       link: https://github.com/wrichman/agency-agents
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+{/* Stats bar */}
+<div class="stats-bar anim">
+  <div class="stat">
+    <span class="stat-number">114</span>
+    <span class="stat-label">Agents</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">14</span>
+    <span class="stat-label">Divisions</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">9</span>
+    <span class="stat-label">Integrations</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">MIT</span>
+    <span class="stat-label">License</span>
+  </div>
+</div>
 
-## Why The Agency?
+{/* Section 01 — Why */}
+<div class="home-section">
+  <div class="section-eyebrow anim anim-delay-1">01 — What sets it apart</div>
+  <h2 class="section-title anim anim-delay-2">Every specialist. One command.</h2>
+  <p class="section-subtitle anim anim-delay-3">The Agency is a curated collection of AI agent personalities — each with deep domain knowledge, a distinct voice, and production-ready workflows.</p>
 
-<CardGrid stagger>
-  <Card title="Specialized, not generic" icon="star">
-    Deep domain expertise — each agent is built for their specific role, not a recycled prompt template.
-  </Card>
-  <Card title="Personality-driven" icon="pencil">
-    Unique voice, communication style, and approach. Your agents have character, opinions, and craft.
-  </Card>
-  <Card title="Deliverable-focused" icon="rocket">
-    Real code, processes, and measurable outcomes. Built and battle-tested in production environments.
-  </Card>
-  <Card title="Multi-tool ready" icon="puzzle">
-    Native support for Claude Code, Cursor, Windsurf, Aider, Gemini CLI, OpenCode, and more.
-  </Card>
-</CardGrid>
+  <div class="features-grid anim anim-delay-4">
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <div class="feature-name">Specialized, not generic</div>
+      <div class="feature-desc">Deep domain expertise built for specific roles — not recycled prompt templates.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🧠</div>
+      <div class="feature-name">Personality-driven</div>
+      <div class="feature-desc">Unique voice, communication style, and opinions. Your agents have character and craft.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📦</div>
+      <div class="feature-name">Deliverable-focused</div>
+      <div class="feature-desc">Real code, processes, and measurable outcomes. Battle-tested in production environments.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔌</div>
+      <div class="feature-name">Multi-tool ready</div>
+      <div class="feature-desc">Native support for Claude Code, Cursor, Windsurf, Aider, Gemini CLI, and more.</div>
+    </div>
+  </div>
+</div>
 
-## Quick Start
-
-Copy agents to your Claude Code directory and start using them immediately:
+{/* Section 02 — Quick Start */}
+<div class="home-section">
+  <div class="section-eyebrow">02 — Get started</div>
+  <h2 class="section-title">Up in 60 seconds</h2>
+  <p class="section-subtitle">Copy agents into your tool of choice and start delegating immediately.</p>
 
 ```bash
-# Clone and install
+# Claude Code — copy agents to your local directory
 git clone https://github.com/wrichman/agency-agents
 cp -r agency-agents/* ~/.claude/agents/
 ```
 
 ```bash
-# For Cursor, Windsurf, Aider, Gemini CLI, or OpenCode
-./scripts/convert.sh   # generates tool-specific formats
-./scripts/install.sh   # interactive installer (auto-detects your tools)
+# All other tools — auto-detect and install
+cd agency-agents
+./scripts/convert.sh   # generate tool-specific formats
+./scripts/install.sh   # interactive installer
 ```
 
-## Browse by Division
+</div>
 
-<CardGrid>
-  <LinkCard title="👔 Executive" description="CEO, CTO, CFO — strategic leadership" href="/agency-agents/executive/" />
-  <LinkCard title="💻 Engineering" description="16 specialists from frontend to DevOps" href="/agency-agents/engineering/" />
-  <LinkCard title="🎨 Design" description="UI, UX, brand, and delight" href="/agency-agents/design/" />
-  <LinkCard title="📢 Marketing" description="18 agents covering growth, content, and community" href="/agency-agents/marketing/" />
-  <LinkCard title="💰 Paid Media" description="Performance marketing and ad specialists" href="/agency-agents/paid-media/" />
-  <LinkCard title="💼 Sales" description="Pipeline, discovery, deals, and proposals" href="/agency-agents/sales/" />
-  <LinkCard title="📦 Product" description="Product management and roadmapping" href="/agency-agents/product/" />
-  <LinkCard title="📋 Project Management" description="Planning, coordination, and delivery" href="/agency-agents/project-management/" />
-  <LinkCard title="🧪 Testing" description="QA, accessibility, and performance testing" href="/agency-agents/testing/" />
-  <LinkCard title="🤝 Support" description="Customer success and operations" href="/agency-agents/support/" />
-  <LinkCard title="👥 People & HR" description="Talent, culture, and compensation" href="/agency-agents/hr/" />
-  <LinkCard title="🎮 Game Development" description="19 agents across Unity, Unreal, Godot, Roblox" href="/agency-agents/game-development/" />
-  <LinkCard title="🥽 Spatial Computing" description="AR/VR/XR specialists" href="/agency-agents/spatial-computing/" />
-  <LinkCard title="🎯 Specialized" description="Niche experts for unique challenges" href="/agency-agents/specialized/" />
-</CardGrid>
+{/* Section 03 — The Roster */}
+<div class="home-section">
+  <div class="section-eyebrow">03 — The roster</div>
+  <h2 class="section-title">114 agents across 14 divisions</h2>
+  <p class="section-subtitle">Every function of a modern organization, staffed with specialists.</p>
 
-## Supported Tools
+  <div class="divisions-grid">
+    <a class="division-card" href="/agency-agents/executive/">
+      <span class="division-emoji">👔</span>
+      <span class="division-name">Executive</span>
+      <span class="division-count">3 agents — CEO, CTO, CFO</span>
+    </a>
+    <a class="division-card" href="/agency-agents/engineering/">
+      <span class="division-emoji">💻</span>
+      <span class="division-name">Engineering</span>
+      <span class="division-count">16 agents — frontend to DevOps</span>
+    </a>
+    <a class="division-card" href="/agency-agents/design/">
+      <span class="division-emoji">🎨</span>
+      <span class="division-name">Design</span>
+      <span class="division-count">8 agents — UI, UX, brand</span>
+    </a>
+    <a class="division-card" href="/agency-agents/marketing/">
+      <span class="division-emoji">📢</span>
+      <span class="division-name">Marketing</span>
+      <span class="division-count">18 agents — growth &amp; content</span>
+    </a>
+    <a class="division-card" href="/agency-agents/paid-media/">
+      <span class="division-emoji">💰</span>
+      <span class="division-name">Paid Media</span>
+      <span class="division-count">7 agents — performance ads</span>
+    </a>
+    <a class="division-card" href="/agency-agents/sales/">
+      <span class="division-emoji">💼</span>
+      <span class="division-name">Sales</span>
+      <span class="division-count">8 agents — pipeline to close</span>
+    </a>
+    <a class="division-card" href="/agency-agents/product/">
+      <span class="division-emoji">📦</span>
+      <span class="division-name">Product</span>
+      <span class="division-count">4 agents — roadmap &amp; research</span>
+    </a>
+    <a class="division-card" href="/agency-agents/project-management/">
+      <span class="division-emoji">📋</span>
+      <span class="division-name">Project Management</span>
+      <span class="division-count">6 agents — planning &amp; delivery</span>
+    </a>
+    <a class="division-card" href="/agency-agents/testing/">
+      <span class="division-emoji">🧪</span>
+      <span class="division-name">Testing</span>
+      <span class="division-count">8 agents — QA &amp; performance</span>
+    </a>
+    <a class="division-card" href="/agency-agents/support/">
+      <span class="division-emoji">🤝</span>
+      <span class="division-name">Support</span>
+      <span class="division-count">6 agents — ops &amp; customer success</span>
+    </a>
+    <a class="division-card" href="/agency-agents/hr/">
+      <span class="division-emoji">👥</span>
+      <span class="division-name">People &amp; HR</span>
+      <span class="division-count">5 agents — talent &amp; culture</span>
+    </a>
+    <a class="division-card" href="/agency-agents/game-development/">
+      <span class="division-emoji">🎮</span>
+      <span class="division-name">Game Development</span>
+      <span class="division-count">5 agents — Unity, Unreal, Godot</span>
+    </a>
+    <a class="division-card" href="/agency-agents/spatial-computing/">
+      <span class="division-emoji">🥽</span>
+      <span class="division-name">Spatial Computing</span>
+      <span class="division-count">6 agents — AR/VR/XR</span>
+    </a>
+    <a class="division-card" href="/agency-agents/specialized/">
+      <span class="division-emoji">🎯</span>
+      <span class="division-name">Specialized</span>
+      <span class="division-count">14 agents — niche experts</span>
+    </a>
+  </div>
+</div>
 
-| Tool | How Agents Load |
-|------|----------------|
-| [Claude Code](https://claude.ai/code) | Native `.md` → `~/.claude/agents/` |
-| [GitHub Copilot](https://github.com/copilot) | Native `.md` → `~/.github/agents/` |
-| [Cursor](https://cursor.sh) | `.mdc` rules → `.cursor/rules/` |
-| [Windsurf](https://codeium.com/windsurf) | `.windsurfrules` |
-| [Aider](https://aider.chat) | `CONVENTIONS.md` |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Extension + `SKILL.md` files |
-| [OpenCode](https://opencode.ai) | `.md` agents → `.opencode/agents/` |
-| [Antigravity](https://github.com/google-gemini/antigravity) | `SKILL.md` per agent |
-| [OpenClaw](https://github.com/openclaw/openclaw) | `SOUL.md` + `AGENTS.md` + `IDENTITY.md` |
+{/* Section 04 — Integrations */}
+<div class="home-section">
+  <div class="section-eyebrow">04 — Integrations</div>
+  <h2 class="section-title">Works with your tools</h2>
+  <p class="section-subtitle">Native formats for every major AI coding environment.</p>
 
-## Contributing
+  <div class="tools-grid">
+    <a class="tool-card" href="https://claude.ai/code" target="_blank" rel="noopener">
+      <div>
+        <div class="tool-name">Claude Code</div>
+        <div class="tool-path">~/.claude/agents/</div>
+      </div>
+    </a>
+    <a class="tool-card" href="https://github.com/copilot" target="_blank" rel="noopener">
+      <div>
+        <div class="tool-name">GitHub Copilot</div>
+        <div class="tool-path">~/.github/agents/</div>
+      </div>
+    </a>
+    <a class="tool-card" href="https://cursor.sh" target="_blank" rel="noopener">
+      <div>
+        <div class="tool-name">Cursor</div>
+        <div class="tool-path">.cursor/rules/</div>
+      </div>
+    </a>
+    <a class="tool-card" href="https://codeium.com/windsurf" target="_blank" rel="noopener">
+      <div>
+        <div class="tool-name">Windsurf</div>
+        <div class="tool-path">.windsurfrules</div>
+      </div>
+    </a>
+    <a class="tool-card" href="https://aider.chat" target="_blank" rel="noopener">
+      <div>
+        <div class="tool-name">Aider</div>
+        <div class="tool-path">CONVENTIONS.md</div>
+      </div>
+    </a>
+    <a class="tool-card" href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener">
+      <div>
+        <div class="tool-name">Gemini CLI</div>
+        <div class="tool-path">SKILL.md per agent</div>
+      </div>
+    </a>
+    <a class="tool-card" href="https://opencode.ai" target="_blank" rel="noopener">
+      <div>
+        <div class="tool-name">OpenCode</div>
+        <div class="tool-path">.opencode/agents/</div>
+      </div>
+    </a>
+    <a class="tool-card" href="https://github.com/google-gemini/antigravity" target="_blank" rel="noopener">
+      <div>
+        <div class="tool-name">Antigravity</div>
+        <div class="tool-path">SKILL.md per agent</div>
+      </div>
+    </a>
+    <a class="tool-card" href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener">
+      <div>
+        <div class="tool-name">OpenClaw</div>
+        <div class="tool-path">SOUL.md + AGENTS.md</div>
+      </div>
+    </a>
+  </div>
+</div>
 
-1. Fork the repo and create an agent file in the appropriate category directory
-2. Follow the template: frontmatter (`name`, `description`, `color`, `emoji`) + Identity + Core Mission + Deliverables
-3. Run `./scripts/lint-agents.sh` to validate
-4. Submit a PR
+{/* Section 05 — Contributing */}
+<div class="home-section">
+  <div class="section-eyebrow">05 — Contributing</div>
+  <h2 class="section-title">Open source, open to ideas</h2>
+  <p class="section-subtitle">Fork the repo, add an agent, run the linter, open a PR. Every expert domain is a candidate.</p>
 
-See [CONTRIBUTING.md](https://github.com/wrichman/agency-agents/blob/main/CONTRIBUTING.md) for full details.
+```bash
+# Validate your agent before submitting
+./scripts/lint-agents.sh
+```
+
+  <p style="margin-top: 1.5rem; font-size: 0.875rem; color: #5a5a70;">
+    See <a href="https://github.com/wrichman/agency-agents/blob/main/CONTRIBUTING.md" style="color: #8b5cf6;">CONTRIBUTING.md</a> for the full agent template and guidelines.
+  </p>
+</div>

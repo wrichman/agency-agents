@@ -7,11 +7,24 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'The Agency',
-      description: '128 specialized AI agents ready to transform your workflow — from frontend wizards to compensation analysts.',
+      description: '114 specialized AI agents ready to transform your workflow — from frontend wizards to compensation analysts.',
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/wrichman/agency-agents' },
       ],
       customCss: ['./src/styles/custom.css'],
+      head: [
+        {
+          tag: 'script',
+          content: `
+            document.documentElement.dataset.theme = 'dark';
+            try { localStorage.setItem('starlight-theme', 'dark'); } catch(e) {}
+          `,
+        },
+        {
+          tag: 'meta',
+          attrs: { name: 'color-scheme', content: 'dark' },
+        },
+      ],
       sidebar: [
         { label: '👔 Executive', autogenerate: { directory: 'executive' } },
         { label: '💻 Engineering', autogenerate: { directory: 'engineering' } },
