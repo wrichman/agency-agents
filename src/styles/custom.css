@@ -1,57 +1,82 @@
-/* The Agency — theme */
+/* Upgraded AI Company OS — Theme */
 
+/* Fraunces (closest free alternative to Recoleta — warm rounded serif) */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap');
+
+/* ── Design tokens ───────────────────────────────────────────────────────── */
+:root {
+  --agency-font-display: 'Fraunces', Georgia, serif;
+  --agency-font-body:    'Inter', system-ui, -apple-system, sans-serif;
+}
 
 /* ── Light theme (default) ───────────────────────────────────────────────── */
 :root,
 [data-theme='light'] {
-  --sl-font: 'Inter', system-ui, -apple-system, sans-serif;
+  --sl-font: var(--agency-font-body);
 
-  --sl-color-bg:         #f9f9fb;
-  --sl-color-bg-nav:     rgba(249, 249, 251, 0.88);
-  --sl-color-bg-sidebar: #f2f2f6;
-  --sl-color-border:     rgba(0, 0, 0, 0.08);
+  /* Backgrounds */
+  --sl-color-bg:         #f8f5f0;
+  --sl-color-bg-nav:     rgba(248, 245, 240, 0.92);
+  --sl-color-bg-sidebar: #f2ede6;
+  --sl-color-border:     rgba(0, 0, 0, 0.09);
 
-  --sl-color-white: #f9f9fb;
-  --sl-color-black: #09090f;
-  --sl-color-gray-1: #111118;
-  --sl-color-gray-2: #38383f;
-  --sl-color-gray-3: #70707c;
-  --sl-color-gray-4: #b8b8c4;
-  --sl-color-gray-5: #dcdce8;
-  --sl-color-gray-6: #eeeef4;
-  --sl-color-gray-7: #f9f9fb;
+  /* Text scale */
+  --sl-color-white: #f8f5f0;
+  --sl-color-black: #1c1c24;
+  --sl-color-gray-1: #1c1c24;
+  --sl-color-gray-2: #3a3a44;
+  --sl-color-gray-3: #6b6b74;
+  --sl-color-gray-4: #b4b4bc;
+  --sl-color-gray-5: #dddad4;
+  --sl-color-gray-6: #ede9e2;
+  --sl-color-gray-7: #f8f5f0;
 
-  --sl-color-accent-low:  #ede9fe;
-  --sl-color-accent:      #6d28d9;
-  --sl-color-accent-high: #3b0764;
-  --sl-color-text-accent: #6d28d9;
+  /* Accent — warm charcoal (no purple in light mode) */
+  --sl-color-accent-low:  #e8e4dc;
+  --sl-color-accent:      #1c1c24;
+  --sl-color-accent-high: #1c1c24;
+  --sl-color-text-accent: #1c1c24;
 
-  /* Component-level tokens */
-  --agency-hero-bg:        #ffffff;
-  --agency-hero-grid:      rgba(109, 40, 217, 0.05);
-  --agency-hero-glow:      rgba(109, 40, 217, 0.08);
+  /* Pagefind search */
+  --pagefind-ui-primary:         #1c1c24;
+  --pagefind-ui-text:            #1c1c24;
+  --pagefind-ui-background:      #f8f5f0;
+  --pagefind-ui-border:          rgba(0, 0, 0, 0.1);
+  --pagefind-ui-border-radius:   0.5rem;
+  --pagefind-ui-tag-background:  #e8e4dc;
+  --pagefind-ui-tag-text:        #1c1c24;
+  --pagefind-ui-font:            var(--agency-font-body);
+
+  /* Component tokens */
+  --agency-hero-bg:        #f8f5f0;
+  --agency-hero-grid:      rgba(28, 28, 36, 0.04);
+  --agency-hero-glow:      rgba(28, 28, 36, 0.04);
   --agency-card-bg:        #ffffff;
   --agency-card-border:    rgba(0, 0, 0, 0.08);
-  --agency-card-hover-bg:  rgba(109, 40, 217, 0.03);
-  --agency-card-hover-bdr: rgba(109, 40, 217, 0.3);
-  --agency-section-border: rgba(0, 0, 0, 0.06);
-  --agency-stat-num:       #09090f;
-  --agency-stat-lbl:       #a0a0b0;
-  --agency-eyebrow:        #6d28d9;
-  --agency-title:          #09090f;
-  --agency-subtitle:       #70707c;
-  --agency-feat-name:      #1a1a24;
-  --agency-feat-desc:      #70707c;
-  --agency-div-name:       #1a1a24;
-  --agency-div-count:      #a0a0b0;
-  --agency-tool-name:      #1a1a24;
-  --agency-tool-path:      #a0a0b0;
-  --agency-muted-link:     #6d28d9;
+  --agency-card-hover-bg:  rgba(28, 28, 36, 0.03);
+  --agency-card-hover-bdr: rgba(28, 28, 36, 0.25);
+  --agency-section-border: rgba(0, 0, 0, 0.07);
+  --agency-stat-num:       #1c1c24;
+  --agency-stat-lbl:       #a0a098;
+  --agency-eyebrow:        #a09890;
+  --agency-title:          #1c1c24;
+  --agency-subtitle:       #6b6b74;
+  --agency-feat-name:      #1c1c24;
+  --agency-feat-desc:      #6b6b74;
+  --agency-div-name:       #1c1c24;
+  --agency-div-count:      #a0a098;
+  --agency-tool-name:      #1c1c24;
+  --agency-tool-path:      #a0a098;
+  --agency-btn-bg:         #1c1c24;
+  --agency-btn-text:       #ffffff;
+  --agency-btn-hover:      #2e2e3a;
 }
 
 /* ── Dark theme ──────────────────────────────────────────────────────────── */
 [data-theme='dark'] {
+  --sl-font: var(--agency-font-body);
+
   --sl-color-bg:         #08080e;
   --sl-color-bg-nav:     rgba(8, 8, 14, 0.85);
   --sl-color-bg-sidebar: #0b0b12;
@@ -72,6 +97,13 @@
   --sl-color-accent-high: #c4b5fd;
   --sl-color-text-accent: #a78bfa;
 
+  --pagefind-ui-primary:        #a78bfa;
+  --pagefind-ui-text:           #eaeaf4;
+  --pagefind-ui-background:     #08080e;
+  --pagefind-ui-border:         rgba(255, 255, 255, 0.08);
+  --pagefind-ui-tag-background: #160d38;
+  --pagefind-ui-tag-text:       #c4b5fd;
+
   --agency-hero-bg:        #08080e;
   --agency-hero-grid:      rgba(139, 92, 246, 0.04);
   --agency-hero-glow:      rgba(139, 92, 246, 0.12);
@@ -82,7 +114,7 @@
   --agency-section-border: rgba(255, 255, 255, 0.06);
   --agency-stat-num:       #f0f0f8;
   --agency-stat-lbl:       #5a5a70;
-  --agency-eyebrow:        #a78bfa;
+  --agency-eyebrow:        #6a6a7a;
   --agency-title:          #f0f0f8;
   --agency-subtitle:       #6a6a7a;
   --agency-feat-name:      #e0e0ec;
@@ -91,7 +123,9 @@
   --agency-div-count:      #4a4a5e;
   --agency-tool-name:      #c0c0d0;
   --agency-tool-path:      #4a4a5e;
-  --agency-muted-link:     #a78bfa;
+  --agency-btn-bg:         #8b5cf6;
+  --agency-btn-text:       #ffffff;
+  --agency-btn-hover:      #7c3aed;
 }
 
 /* ── Header ──────────────────────────────────────────────────────────────── */
@@ -102,8 +136,10 @@ header.header {
 }
 
 .site-title {
+  font-family: var(--agency-font-display);
   font-weight: 700;
   letter-spacing: -0.02em;
+  font-style: italic;
 }
 
 /* ── Hero ────────────────────────────────────────────────────────────────── */
@@ -127,36 +163,23 @@ header.header {
   pointer-events: none;
 }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  top: -10rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50rem;
-  height: 30rem;
-  background: radial-gradient(ellipse, var(--agency-hero-glow) 0%, transparent 70%);
-  pointer-events: none;
-}
-
-.hero > .sl-flex {
-  position: relative;
-  z-index: 1;
-}
+.hero > .sl-flex { position: relative; z-index: 1; }
 
 .hero h1 {
+  font-family: var(--agency-font-display) !important;
   font-size: clamp(2.5rem, 7vw, 4.5rem) !important;
-  font-weight: 800;
-  letter-spacing: -0.04em;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -0.03em;
   line-height: 1.05;
   color: var(--agency-title);
 }
 
 .hero .tagline {
-  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
   color: var(--agency-subtitle);
-  max-width: 44ch;
-  line-height: 1.6;
+  max-width: 46ch;
+  line-height: 1.65;
   font-weight: 400;
 }
 
@@ -165,17 +188,141 @@ header.header {
   line-height: 1;
   display: block;
   animation: float 5s ease-in-out infinite;
-  filter: drop-shadow(0 0 2rem rgba(109, 40, 217, 0.2));
-}
-
-[data-theme='dark'] .hero-emoji {
-  filter: drop-shadow(0 0 3rem rgba(139, 92, 246, 0.35));
 }
 
 @keyframes float {
   0%, 100% { transform: translateY(0px) rotate(-2deg); }
   50%       { transform: translateY(-14px) rotate(2deg); }
 }
+
+/* CTA buttons — off-black */
+a.action.primary,
+.action.primary > a,
+.hero a[class*="primary"],
+[data-theme='light'] a.action.primary,
+[data-theme='light'] .action.primary > a {
+  background: var(--agency-btn-bg) !important;
+  border-color: var(--agency-btn-bg) !important;
+  color: var(--agency-btn-text) !important;
+  font-family: var(--agency-font-display);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+a.action.primary:hover,
+.action.primary > a:hover {
+  background: var(--agency-btn-hover) !important;
+  border-color: var(--agency-btn-hover) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ── Search / dialog fixes ───────────────────────────────────────────────── */
+
+/* Force search dialog to use theme colors */
+[data-theme='light'] starlight-search dialog,
+[data-theme='light'] dialog[aria-label] {
+  background-color: #f8f5f0 !important;
+  color: #1c1c24 !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme='light'] .pagefind-ui__search-input,
+[data-theme='light'] input[type='search'],
+[data-theme='light'] input[type='text'] {
+  background-color: #ffffff !important;
+  color: #1c1c24 !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+[data-theme='light'] .pagefind-ui__result,
+[data-theme='light'] .pagefind-ui__result-link,
+[data-theme='light'] .pagefind-ui__result-excerpt {
+  background-color: #ffffff !important;
+  color: #1c1c24 !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+[data-theme='light'] .pagefind-ui__result-link {
+  color: #1c1c24 !important;
+  font-weight: 600;
+}
+
+[data-theme='light'] .pagefind-ui__result-excerpt mark {
+  background: #e8e4dc;
+  color: #1c1c24;
+}
+
+/* ── Agent content pages ─────────────────────────────────────────────────── */
+
+/* Fix white headings in light mode */
+[data-theme='light'] .sl-markdown-content h1,
+[data-theme='light'] .sl-markdown-content h2,
+[data-theme='light'] .sl-markdown-content h3,
+[data-theme='light'] .sl-markdown-content h4,
+[data-theme='light'] .sl-markdown-content h5,
+[data-theme='light'] .sl-markdown-content h6,
+[data-theme='light'] .content-panel main h1,
+[data-theme='light'] .page-title {
+  color: #1c1c24 !important;
+}
+
+/* Display font for major headings */
+.sl-markdown-content h1,
+.sl-markdown-content h2 {
+  font-family: var(--agency-font-display);
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+/* Better prose for agent content */
+[data-theme='light'] .sl-markdown-content {
+  color: #3a3a44;
+}
+
+[data-theme='light'] .sl-markdown-content strong {
+  color: #1c1c24;
+}
+
+[data-theme='light'] .sl-markdown-content a {
+  color: #1c1c24;
+  text-decoration-color: rgba(28, 28, 36, 0.3);
+}
+
+[data-theme='light'] .sl-markdown-content a:hover {
+  text-decoration-color: #1c1c24;
+}
+
+[data-theme='light'] .sl-markdown-content code {
+  background: rgba(0, 0, 0, 0.05);
+  color: #1c1c24;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+  padding: 0.1em 0.35em;
+}
+
+[data-theme='light'] .sl-markdown-content blockquote {
+  border-left-color: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.02);
+  color: #6b6b74;
+}
+
+[data-theme='light'] .sl-markdown-content table th {
+  background: #f2ede6;
+  color: #1c1c24;
+}
+
+[data-theme='light'] .sl-markdown-content table td {
+  border-color: rgba(0, 0, 0, 0.07);
+  color: #3a3a44;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────────────────────── */
+.sidebar-pane { border-inline-end-color: var(--sl-color-border); }
+
+[data-theme='light'] .sidebar-pane { background: #f2ede6; }
 
 /* ── Stats bar ───────────────────────────────────────────────────────────── */
 .stats-bar {
@@ -190,8 +337,10 @@ header.header {
 .stat { display: flex; flex-direction: column; gap: 0.2rem; }
 
 .stat-number {
-  font-size: 2rem;
-  font-weight: 800;
+  font-family: var(--agency-font-display);
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-style: italic;
   letter-spacing: -0.04em;
   color: var(--agency-stat-num);
   line-height: 1;
@@ -213,29 +362,31 @@ header.header {
 .home-section:last-child { border-bottom: none; }
 
 .section-eyebrow {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--agency-eyebrow);
   margin-bottom: 1rem;
-  font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+  font-family: var(--agency-font-body);
 }
 
 .section-title {
-  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-family: var(--agency-font-display);
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
   font-weight: 700;
+  font-style: italic;
   letter-spacing: -0.03em;
   color: var(--agency-title);
   margin: 0 0 0.75rem;
-  line-height: 1.15;
+  line-height: 1.1;
 }
 
 .section-subtitle {
   font-size: 1rem;
   color: var(--agency-subtitle);
   max-width: 52ch;
-  line-height: 1.65;
+  line-height: 1.7;
   margin-bottom: 2.5rem;
 }
 
@@ -258,8 +409,45 @@ header.header {
 .feature-card:hover { background: var(--agency-card-hover-bg); }
 
 .feature-icon  { font-size: 1.5rem; margin-bottom: 1rem; }
-.feature-name  { font-size: 0.9375rem; font-weight: 600; color: var(--agency-feat-name); margin-bottom: 0.5rem; letter-spacing: -0.01em; }
-.feature-desc  { font-size: 0.875rem; color: var(--agency-feat-desc); line-height: 1.6; }
+.feature-name  { font-size: 0.9375rem; font-weight: 600; color: var(--agency-feat-name); margin-bottom: 0.5rem; }
+.feature-desc  { font-size: 0.875rem; color: var(--agency-feat-desc); line-height: 1.65; }
+
+/* ── Workflow examples ───────────────────────────────────────────────────── */
+.workflow-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.workflow-example {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--agency-card-bg);
+  border: 1px solid var(--agency-card-border);
+  border-radius: 0.75rem;
+}
+
+.workflow-label {
+  flex-shrink: 0;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--agency-stat-lbl);
+  padding-top: 0.1rem;
+  min-width: 3rem;
+}
+
+.workflow-text {
+  font-size: 0.9375rem;
+  color: var(--agency-feat-name);
+  line-height: 1.5;
+  font-style: italic;
+  font-family: var(--agency-font-display);
+}
 
 /* ── Divisions grid ──────────────────────────────────────────────────────── */
 .divisions-grid {
@@ -284,7 +472,7 @@ header.header {
 }
 
 .division-emoji { font-size: 1.25rem; display: block; margin-bottom: 0.5rem; }
-.division-name  { font-size: 0.8125rem; font-weight: 600; color: var(--agency-div-name); letter-spacing: -0.01em; display: block; margin-bottom: 0.2rem; }
+.division-name  { font-size: 0.8125rem; font-weight: 600; color: var(--agency-div-name); display: block; margin-bottom: 0.2rem; }
 .division-count { font-size: 0.7rem; color: var(--agency-div-count); }
 
 /* ── Tools grid ──────────────────────────────────────────────────────────── */
@@ -303,15 +491,12 @@ header.header {
   border-radius: 0.5rem;
   padding: 0.875rem 1rem;
   text-decoration: none;
-  transition: border-color 0.15s, background 0.15s;
+  transition: border-color 0.15s;
 }
-.tool-card:hover {
-  border-color: var(--agency-card-hover-bdr);
-  background: var(--agency-card-hover-bg);
-}
+.tool-card:hover { border-color: var(--agency-card-hover-bdr); }
 
 .tool-name { font-size: 0.875rem; font-weight: 500; color: var(--agency-tool-name); }
-.tool-path { font-size: 0.7rem; color: var(--agency-tool-path); font-family: ui-monospace, monospace; }
+.tool-path { font-size: 0.68rem; color: var(--agency-tool-path); font-family: ui-monospace, monospace; }
 
 /* ── Entrance animations ─────────────────────────────────────────────────── */
 @keyframes fadeUp {
@@ -319,19 +504,16 @@ header.header {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.anim            { opacity: 0; animation: fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
-.anim-delay-1    { animation-delay: 0.08s; }
-.anim-delay-2    { animation-delay: 0.16s; }
-.anim-delay-3    { animation-delay: 0.24s; }
-.anim-delay-4    { animation-delay: 0.32s; }
-
-/* ── Sidebar ─────────────────────────────────────────────────────────────── */
-.sidebar-pane { border-inline-end-color: var(--sl-color-border); }
+.anim         { opacity: 0; animation: fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+.anim-delay-1 { animation-delay: 0.08s; }
+.anim-delay-2 { animation-delay: 0.16s; }
+.anim-delay-3 { animation-delay: 0.24s; }
+.anim-delay-4 { animation-delay: 0.32s; }
 
 /* ── Responsive ──────────────────────────────────────────────────────────── */
 @media (max-width: 50rem) {
   .stats-bar      { gap: 1.5rem; }
-  .stat-number    { font-size: 1.5rem; }
+  .stat-number    { font-size: 1.75rem; }
   .features-grid  { grid-template-columns: 1fr; }
   .divisions-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
 }

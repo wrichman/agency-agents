@@ -6,11 +6,8 @@ export default defineConfig({
   base: '/agency-agents',
   integrations: [
     starlight({
-      title: 'The Agency',
-      description: '114 specialized AI agents ready to transform your workflow — from frontend wizards to compensation analysts.',
-      social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/wrichman/agency-agents' },
-      ],
+      title: 'Upgraded AI Company OS',
+      description: '114 specialized AI agents — your complete company, run by AI.',
       customCss: ['./src/styles/custom.css'],
       head: [
         {
@@ -20,10 +17,6 @@ export default defineConfig({
               document.documentElement.dataset.theme = 'light';
             }
           `,
-        },
-        {
-          tag: 'meta',
-          attrs: { name: 'color-scheme', content: 'dark' },
         },
       ],
       sidebar: [
