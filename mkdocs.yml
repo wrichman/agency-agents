@@ -1,0 +1,60 @@
+site_name: The Agency
+site_description: 125 specialized AI agents ready to transform your workflow — from frontend wizards to compensation analysts.
+site_url: https://msitarzewski.github.io/agency-agents/
+repo_url: https://github.com/msitarzewski/agency-agents
+repo_name: agency-agents
+edit_uri: edit/main/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - tables
+  - fenced_code
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/msitarzewski/agency-agents
+    - icon: fontawesome/brands/reddit
+      link: https://reddit.com/r/ClaudeAI
+
