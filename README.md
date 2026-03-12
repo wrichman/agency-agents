@@ -132,6 +132,18 @@ Turning pipeline into revenue through craft, not CRM busywork.
 | 🗺️ [Account Strategist](sales/sales-account-strategist.md) | Land-and-expand, QBRs, stakeholder mapping | Post-sale expansion, account planning, NRR growth |
 | 🏋️ [Sales Coach](sales/sales-coach.md) | Rep development, call coaching, pipeline review facilitation | Making every rep and every deal better through structured coaching |
 
+### 👥 People & HR Division
+
+Building the team that builds the company.
+
+| Agent | Specialty | When to Use |
+|-------|-----------|-------------|
+| 🔎 [Talent Sourcer](hr/hr-talent-sourcer.md) | Job descriptions, multi-channel sourcing, candidate pipelines | Building high-signal pipelines, writing compelling JDs, outreach that gets replies |
+| 🎤 [Interview Coach](hr/hr-interview-coach.md) | Structured interviews, scorecards, debrief facilitation | Designing interview loops, training interviewers, making confident hiring decisions |
+| 🗺️ [Onboarding Architect](hr/hr-onboarding-architect.md) | 30/60/90 plans, Day 1 experience, ramp-to-productivity | New hire setup, onboarding programs, reducing early attrition |
+| 🌱 [Culture Strategist](hr/hr-culture-strategist.md) | Values articulation, psychological safety, manager enablement | Defining culture, engagement surveys, building belonging |
+| ⚖️ [Compensation Analyst](hr/hr-compensation-analyst.md) | Leveling frameworks, pay bands, equity design, pay equity | Comp philosophy, salary bands, leveling systems, pay equity audits |
+
 ### 📢 Marketing Division
 
 Growing your audience, one authentic interaction at a time.
@@ -441,7 +453,7 @@ Each agent is designed with:
 
 ## 📊 Stats
 
-- 🎭 **120 Specialized Agents** across 12 divisions
+- 🎭 **125 Specialized Agents** across 13 divisions
 - 📝 **10,000+ lines** of personality, process, and code examples
 - ⏱️ **Months of iteration** from real-world usage
 - 🌟 **Battle-tested** in production environments

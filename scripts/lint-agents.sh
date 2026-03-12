@@ -14,6 +14,7 @@ AGENT_DIRS=(
   design
   engineering
   game-development
+  hr
   marketing
   paid-media
   sales
