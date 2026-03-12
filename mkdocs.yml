@@ -1,7 +1,7 @@
 site_name: The Agency
 site_description: 125 specialized AI agents ready to transform your workflow — from frontend wizards to compensation analysts.
-site_url: https://msitarzewski.github.io/agency-agents/
-repo_url: https://github.com/msitarzewski/agency-agents
+site_url: https://wrichman.github.io/agency-agents/
+repo_url: https://github.com/wrichman/agency-agents
 repo_name: agency-agents
 edit_uri: edit/main/
 
@@ -54,7 +54,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/msitarzewski/agency-agents
+      link: https://github.com/wrichman/agency-agents
     - icon: fontawesome/brands/reddit
       link: https://reddit.com/r/ClaudeAI
 
