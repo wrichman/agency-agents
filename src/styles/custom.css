@@ -1,0 +1,66 @@
+/* The Agency — Custom Starlight theme */
+
+:root,
+[data-theme='light'] {
+  --sl-color-accent-low: #ede9fe;
+  --sl-color-accent: #7c3aed;
+  --sl-color-accent-high: #4c1d95;
+  --sl-color-text-accent: #6d28d9;
+}
+
+[data-theme='dark'] {
+  --sl-color-accent-low: #2e1065;
+  --sl-color-accent: #a78bfa;
+  --sl-color-accent-high: #ddd6fe;
+  --sl-color-text-accent: #c4b5fd;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #0f0520 0%, #1e0a3c 40%, #2d1b69 100%);
+  padding-block: 4rem;
+}
+
+[data-theme='light'] .hero {
+  background: linear-gradient(135deg, #2d1b69 0%, #4c1d95 50%, #5b21b6 100%);
+}
+
+.hero .tagline {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  opacity: 0.9;
+  max-width: 42ch;
+}
+
+.hero-emoji {
+  font-size: 5rem;
+  line-height: 1;
+  display: block;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 2rem rgba(167, 139, 250, 0.4));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+/* Site header */
+header.header {
+  border-bottom: 1px solid var(--sl-color-accent-low);
+}
+
+/* Sidebar */
+.sidebar-pane {
+  border-inline-end-color: var(--sl-color-accent-low);
+}
+
+/* Cards */
+.sl-link-card {
+  border-color: var(--sl-color-accent-low);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.sl-link-card:hover {
+  border-color: var(--sl-color-accent);
+  transform: translateY(-2px);
+}

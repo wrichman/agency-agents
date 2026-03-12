@@ -1,0 +1,13 @@
+{
+  "name": "agency-agents",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/prep-docs.mjs && astro dev",
+    "build": "node scripts/prep-docs.mjs && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.38.1",
+    "astro": "^6.0.3"
+  }
+}

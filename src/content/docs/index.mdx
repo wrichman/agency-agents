@@ -1,0 +1,95 @@
+---
+title: The Agency
+description: 128 specialized AI agents ready to transform your workflow — from frontend wizards to compensation analysts.
+template: splash
+hero:
+  tagline: Your complete AI team, ready to deploy. 128 specialists with personality, process, and proven deliverables.
+  image:
+    html: '<div class="hero-emoji">🎭</div>'
+  actions:
+    - text: Browse Agents
+      link: /agency-agents/engineering/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/wrichman/agency-agents
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## Why The Agency?
+
+<CardGrid stagger>
+  <Card title="Specialized, not generic" icon="star">
+    Deep domain expertise — each agent is built for their specific role, not a recycled prompt template.
+  </Card>
+  <Card title="Personality-driven" icon="pencil">
+    Unique voice, communication style, and approach. Your agents have character, opinions, and craft.
+  </Card>
+  <Card title="Deliverable-focused" icon="rocket">
+    Real code, processes, and measurable outcomes. Built and battle-tested in production environments.
+  </Card>
+  <Card title="Multi-tool ready" icon="puzzle">
+    Native support for Claude Code, Cursor, Windsurf, Aider, Gemini CLI, OpenCode, and more.
+  </Card>
+</CardGrid>
+
+## Quick Start
+
+Copy agents to your Claude Code directory and start using them immediately:
+
+```bash
+# Clone and install
+git clone https://github.com/wrichman/agency-agents
+cp -r agency-agents/* ~/.claude/agents/
+```
+
+```bash
+# For Cursor, Windsurf, Aider, Gemini CLI, or OpenCode
+./scripts/convert.sh   # generates tool-specific formats
+./scripts/install.sh   # interactive installer (auto-detects your tools)
+```
+
+## Browse by Division
+
+<CardGrid>
+  <LinkCard title="👔 Executive" description="CEO, CTO, CFO — strategic leadership" href="/agency-agents/executive/" />
+  <LinkCard title="💻 Engineering" description="16 specialists from frontend to DevOps" href="/agency-agents/engineering/" />
+  <LinkCard title="🎨 Design" description="UI, UX, brand, and delight" href="/agency-agents/design/" />
+  <LinkCard title="📢 Marketing" description="18 agents covering growth, content, and community" href="/agency-agents/marketing/" />
+  <LinkCard title="💰 Paid Media" description="Performance marketing and ad specialists" href="/agency-agents/paid-media/" />
+  <LinkCard title="💼 Sales" description="Pipeline, discovery, deals, and proposals" href="/agency-agents/sales/" />
+  <LinkCard title="📦 Product" description="Product management and roadmapping" href="/agency-agents/product/" />
+  <LinkCard title="📋 Project Management" description="Planning, coordination, and delivery" href="/agency-agents/project-management/" />
+  <LinkCard title="🧪 Testing" description="QA, accessibility, and performance testing" href="/agency-agents/testing/" />
+  <LinkCard title="🤝 Support" description="Customer success and operations" href="/agency-agents/support/" />
+  <LinkCard title="👥 People & HR" description="Talent, culture, and compensation" href="/agency-agents/hr/" />
+  <LinkCard title="🎮 Game Development" description="19 agents across Unity, Unreal, Godot, Roblox" href="/agency-agents/game-development/" />
+  <LinkCard title="🥽 Spatial Computing" description="AR/VR/XR specialists" href="/agency-agents/spatial-computing/" />
+  <LinkCard title="🎯 Specialized" description="Niche experts for unique challenges" href="/agency-agents/specialized/" />
+</CardGrid>
+
+## Supported Tools
+
+| Tool | How Agents Load |
+|------|----------------|
+| [Claude Code](https://claude.ai/code) | Native `.md` → `~/.claude/agents/` |
+| [GitHub Copilot](https://github.com/copilot) | Native `.md` → `~/.github/agents/` |
+| [Cursor](https://cursor.sh) | `.mdc` rules → `.cursor/rules/` |
+| [Windsurf](https://codeium.com/windsurf) | `.windsurfrules` |
+| [Aider](https://aider.chat) | `CONVENTIONS.md` |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Extension + `SKILL.md` files |
+| [OpenCode](https://opencode.ai) | `.md` agents → `.opencode/agents/` |
+| [Antigravity](https://github.com/google-gemini/antigravity) | `SKILL.md` per agent |
+| [OpenClaw](https://github.com/openclaw/openclaw) | `SOUL.md` + `AGENTS.md` + `IDENTITY.md` |
+
+## Contributing
+
+1. Fork the repo and create an agent file in the appropriate category directory
+2. Follow the template: frontmatter (`name`, `description`, `color`, `emoji`) + Identity + Core Mission + Deliverables
+3. Run `./scripts/lint-agents.sh` to validate
+4. Submit a PR
+
+See [CONTRIBUTING.md](https://github.com/wrichman/agency-agents/blob/main/CONTRIBUTING.md) for full details.

@@ -20,27 +20,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-node@v4
         with:
-          python-version: '3.x'
+          node-version: '20'
+          cache: 'npm'
 
-      - name: Install MkDocs dependencies
-        run: pip install -r requirements-docs.txt
-
-      - name: Copy agent directories into docs/
-        run: |
-          for dir in design engineering game-development hr marketing paid-media \
-                     sales product project-management testing support \
-                     spatial-computing specialized; do
-            [ -d "$dir" ] && cp -r "$dir" "docs/$dir"
-          done
+      - name: Install dependencies
+        run: npm install
 
       - name: Build site
-        run: mkdocs build
+        run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site/
+          path: dist/
 
   deploy:
     environment:
