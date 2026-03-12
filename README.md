@@ -335,7 +335,7 @@ Building worlds, systems, and experiences across every major engine.
 
 ---
 
-### Scenario 5: Paid Media Account Takeover
+### Scenario 4: Paid Media Account Takeover
 
 **Your Team**:
 
@@ -350,7 +350,7 @@ Building worlds, systems, and experiences across every major engine.
 
 ---
 
-### Scenario 4: Full Agency Product Discovery
+### Scenario 5: Full Agency Product Discovery
 
 **Your Team**: All 8 divisions working in parallel on a single mission.
 
