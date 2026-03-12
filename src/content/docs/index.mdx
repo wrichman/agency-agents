@@ -1,5 +1,5 @@
 ---
-title: Upgraded AI Company OS
+title: AI Company OS
 description: 114 specialized AI agents — your complete company, run by AI.
 template: splash
 hero:
@@ -91,18 +91,6 @@ hero:
       <span class="workflow-text">"Run the Reality Checker on this sprint plan — I want to know what we're missing."</span>
     </div>
   </div>
-
-```bash
-# Install in 30 seconds — Claude Code
-git clone https://github.com/wrichman/agency-agents
-cp -r agency-agents/* ~/.claude/agents/
-```
-
-```bash
-# All other tools — auto-detect and install
-cd agency-agents && ./scripts/install.sh
-```
-
 </div>
 
 {/* Section 03 — The roster */}
@@ -187,79 +175,64 @@ cd agency-agents && ./scripts/install.sh
 
 {/* Section 04 — Integrations */}
 <div class="home-section">
-  <div class="section-eyebrow">04 — Integrations</div>
-  <h2 class="section-title">Works with your tools.</h2>
-  <p class="section-subtitle">One agent library, nine AI coding environments. Install once, available everywhere.</p>
+  <div class="section-eyebrow">04 — Works with your stack</div>
+  <h2 class="section-title">Your agents, inside the tools you already use.</h2>
+  <p class="section-subtitle">Each agent knows the context of your business software — they don't just respond, they operate.</p>
 
   <div class="tools-grid">
-    <a class="tool-card" href="https://claude.ai/code" target="_blank" rel="noopener">
+    <div class="tool-card">
       <div>
-        <div class="tool-name">Claude Code</div>
-        <div class="tool-path">~/.claude/agents/</div>
+        <div class="tool-name">Slack</div>
+        <div class="tool-path">Team communication &amp; alerts</div>
       </div>
-    </a>
-    <a class="tool-card" href="https://github.com/copilot" target="_blank" rel="noopener">
+    </div>
+    <div class="tool-card">
       <div>
-        <div class="tool-name">GitHub Copilot</div>
-        <div class="tool-path">~/.github/agents/</div>
+        <div class="tool-name">Gmail</div>
+        <div class="tool-path">Email outreach &amp; responses</div>
       </div>
-    </a>
-    <a class="tool-card" href="https://cursor.sh" target="_blank" rel="noopener">
+    </div>
+    <div class="tool-card">
       <div>
-        <div class="tool-name">Cursor</div>
-        <div class="tool-path">.cursor/rules/</div>
+        <div class="tool-name">Google Calendar</div>
+        <div class="tool-path">Scheduling &amp; coordination</div>
       </div>
-    </a>
-    <a class="tool-card" href="https://codeium.com/windsurf" target="_blank" rel="noopener">
+    </div>
+    <div class="tool-card">
       <div>
-        <div class="tool-name">Windsurf</div>
-        <div class="tool-path">.windsurfrules</div>
+        <div class="tool-name">Notion</div>
+        <div class="tool-path">Docs, wikis &amp; knowledge base</div>
       </div>
-    </a>
-    <a class="tool-card" href="https://aider.chat" target="_blank" rel="noopener">
+    </div>
+    <div class="tool-card">
       <div>
-        <div class="tool-name">Aider</div>
-        <div class="tool-path">CONVENTIONS.md</div>
+        <div class="tool-name">Asana</div>
+        <div class="tool-path">Project tracking &amp; tasks</div>
       </div>
-    </a>
-    <a class="tool-card" href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener">
+    </div>
+    <div class="tool-card">
       <div>
-        <div class="tool-name">Gemini CLI</div>
-        <div class="tool-path">SKILL.md per agent</div>
+        <div class="tool-name">QuickBooks</div>
+        <div class="tool-path">Accounting &amp; financials</div>
       </div>
-    </a>
-    <a class="tool-card" href="https://opencode.ai" target="_blank" rel="noopener">
+    </div>
+    <div class="tool-card">
       <div>
-        <div class="tool-name">OpenCode</div>
-        <div class="tool-path">.opencode/agents/</div>
+        <div class="tool-name">Salesforce</div>
+        <div class="tool-path">CRM &amp; pipeline</div>
       </div>
-    </a>
-    <a class="tool-card" href="https://github.com/google-gemini/antigravity" target="_blank" rel="noopener">
+    </div>
+    <div class="tool-card">
       <div>
-        <div class="tool-name">Antigravity</div>
-        <div class="tool-path">SKILL.md per agent</div>
+        <div class="tool-name">HubSpot</div>
+        <div class="tool-path">Marketing &amp; sales automation</div>
       </div>
-    </a>
-    <a class="tool-card" href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener">
+    </div>
+    <div class="tool-card">
       <div>
-        <div class="tool-name">OpenClaw</div>
-        <div class="tool-path">SOUL.md + AGENTS.md</div>
+        <div class="tool-name">Zapier</div>
+        <div class="tool-path">Cross-app automation</div>
       </div>
-    </a>
+    </div>
   </div>
-</div>
-
-{/* Section 05 — Open source */}
-<div class="home-section">
-  <div class="section-eyebrow">05 — Open source</div>
-  <h2 class="section-title">Every domain is a hire waiting to happen.</h2>
-  <p class="section-subtitle">Fork the repo, write an agent for your domain, open a PR. The company grows with every contribution.</p>
-
-```bash
-./scripts/lint-agents.sh   # validate before submitting
-```
-
-  <p style="margin-top: 1.5rem; font-size: 0.875rem; color: var(--agency-subtitle);">
-    See <a href="https://github.com/wrichman/agency-agents/blob/main/CONTRIBUTING.md" style="color: var(--agency-title); text-decoration: underline; text-underline-offset: 3px;">CONTRIBUTING.md</a> for the agent template and guidelines.
-  </p>
 </div>

@@ -221,28 +221,40 @@ a.action.primary:hover,
 
 /* ── Search / dialog fixes ───────────────────────────────────────────────── */
 
-/* Force search dialog to use theme colors */
-[data-theme='light'] starlight-search dialog,
-[data-theme='light'] dialog[aria-label] {
+/* Dialog backdrop and container */
+[data-theme='light'] dialog,
+[data-theme='light'] dialog[open] {
   background-color: #f8f5f0 !important;
   color: #1c1c24 !important;
+  color-scheme: light !important;
   border-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-[data-theme='light'] .pagefind-ui__search-input,
-[data-theme='light'] input[type='search'],
-[data-theme='light'] input[type='text'] {
-  background-color: #ffffff !important;
-  color: #1c1c24 !important;
-  border-color: rgba(0, 0, 0, 0.12) !important;
+/* Every element inside the dialog */
+[data-theme='light'] dialog *,
+[data-theme='light'] dialog input,
+[data-theme='light'] dialog button {
+  color-scheme: light;
 }
 
-[data-theme='light'] .pagefind-ui__result,
-[data-theme='light'] .pagefind-ui__result-link,
-[data-theme='light'] .pagefind-ui__result-excerpt {
+[data-theme='light'] .pagefind-ui,
+[data-theme='light'] .pagefind-ui__form,
+[data-theme='light'] .pagefind-ui__search-wrapper {
+  background-color: #f8f5f0 !important;
+  color: #1c1c24 !important;
+}
+
+[data-theme='light'] .pagefind-ui__search-input,
+[data-theme='light'] input[type='search'] {
   background-color: #ffffff !important;
   color: #1c1c24 !important;
-  border-color: rgba(0, 0, 0, 0.08) !important;
+  border-color: rgba(0, 0, 0, 0.14) !important;
+  color-scheme: light !important;
+}
+
+[data-theme='light'] .pagefind-ui__result {
+  background-color: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.07) !important;
 }
 
 [data-theme='light'] .pagefind-ui__result-link {
@@ -250,9 +262,67 @@ a.action.primary:hover,
   font-weight: 600;
 }
 
+[data-theme='light'] .pagefind-ui__result-excerpt {
+  color: #3a3a44 !important;
+}
+
 [data-theme='light'] .pagefind-ui__result-excerpt mark {
   background: #e8e4dc;
   color: #1c1c24;
+}
+
+/* ── Sidebar title / group label fixes ───────────────────────────────────── */
+
+[data-theme='light'] .sidebar-pane {
+  background: #f2ede6;
+  color: #1c1c24;
+}
+
+/* Group labels (division names like "👔 Executive") */
+[data-theme='light'] .group-label,
+[data-theme='light'] .group-label span,
+[data-theme='light'] details > summary,
+[data-theme='light'] details > summary span,
+[data-theme='light'] .sl-sidebar-group-label,
+[data-theme='light'] nav.sidebar .group-label {
+  color: #1c1c24 !important;
+}
+
+/* Sidebar links */
+[data-theme='light'] nav.sidebar a,
+[data-theme='light'] .sidebar-pane a {
+  color: #3a3a44;
+}
+
+[data-theme='light'] nav.sidebar a:hover,
+[data-theme='light'] nav.sidebar a[aria-current='page'] {
+  color: #1c1c24;
+  background-color: rgba(28, 28, 36, 0.06);
+}
+
+/* ── Table of Contents (right sidebar) ───────────────────────────────────── */
+
+[data-theme='light'] .right-sidebar-panel,
+[data-theme='light'] starlight-toc,
+[data-theme='light'] starlight-toc * {
+  color: #3a3a44;
+}
+
+[data-theme='light'] starlight-toc a {
+  color: #6b6b74;
+  text-decoration: none;
+}
+
+[data-theme='light'] starlight-toc a:hover {
+  color: #1c1c24;
+  background-color: rgba(28, 28, 36, 0.04) !important;
+}
+
+[data-theme='light'] starlight-toc a[aria-current='true'] {
+  color: #1c1c24 !important;
+  background-color: rgba(28, 28, 36, 0.07) !important;
+  border-inline-start-color: #1c1c24 !important;
+  font-weight: 500;
 }
 
 /* ── Agent content pages ─────────────────────────────────────────────────── */
@@ -327,11 +397,12 @@ a.action.primary:hover,
 /* ── Stats bar ───────────────────────────────────────────────────────────── */
 .stats-bar {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0 3rem;
+  flex-wrap: nowrap;
+  gap: 0 2.5rem;
   padding: 2.5rem 0;
   border-bottom: 1px solid var(--agency-section-border);
   margin-bottom: 4rem;
+  overflow-x: auto;
 }
 
 .stat { display: flex; flex-direction: column; gap: 0.2rem; }

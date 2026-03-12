@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/agency-agents',
   integrations: [
     starlight({
-      title: 'Upgraded AI Company OS',
+      title: 'AI Company OS',
       description: '114 specialized AI agents — your complete company, run by AI.',
       customCss: ['./src/styles/custom.css'],
       head: [
